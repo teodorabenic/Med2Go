@@ -24,7 +24,7 @@
         android:fontFamily="sans-serif"
         android:hint="@string/naziv_lijeka"
         android:inputType="textPersonName"
-        android:shadowRadius="10dp"
+        android:shadowRadius="10"
 
         android:textSize="18sp"
         android:autofillHints="" />
@@ -59,6 +59,15 @@
         app:srcCompat="@drawable/search" />
 
     <ImageView
+<<<<<<< HEAD
+=======
+        android:id="@+id/imageView3"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+>>>>>>> 51d320cced5cda08bb9ceb90531f92487c2e78cb
         android:id="@+id/imageView4"
         android:layout_width="30dp"
         android:layout_height="30dp"
