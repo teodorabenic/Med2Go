@@ -1,0 +1,11 @@
+'Proizvod_3' 8 4
+'Proizvod_8' 7 4
+'Proizvod_3' 9 5
+'Proizvod_6' 1 1
+'Proizvod_3' 4 8
+'Proizvod_7' 7 0
+'Proizvod_10' 8 7
+'Proizvod_4' 7 1
+'Proizvod_8' 4 8
+'Proizvod_3' 7 5
+'Proizvod_1' 5 8
