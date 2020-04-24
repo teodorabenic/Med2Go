@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
                 setContentView(R.layout.loginstrana);
             }
         });
-        Button dug_nastavi = findViewById(R.id.dugmereg);
+        Button dug_nastavi = findViewById(R.id.dugmenastavi);
         dug_nastavi.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 setContentView(R.layout.searchstrana);
