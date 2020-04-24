@@ -24,7 +24,7 @@
         android:fontFamily="sans-serif"
         android:hint="Naziv lijeka..."
         android:inputType="textPersonName"
-        android:shadowRadius="10dp"
+        android:shadowRadius="10"
 
         android:textSize="18dp" />
 
