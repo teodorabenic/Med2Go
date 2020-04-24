@@ -1,0 +1,25 @@
+Potrebno:
+-Spiskovi apoteka
+-Spiskovi proizvoda u apotekama
+-Podaci o korisnicima
+-Podaci o dostavljačima na terenu
+-Elektronski recepti
+
+formula za random koordinate (mb.x + rand()%dx, mb.y + rand()%dy)
+
+*Spiskovi apoteka spiskovi_apoteka.txt +
+- [naziv apoteke] [adresa] [broj_telefona] [koordinate]
+
+*Spiskovi proizvoda u apotekama FolderApoteka->apotekabr.txt +
+- [ime_proizvod] [cijena] [kolicina] 
+
+*Podaci o korisnicima podaci_korisnici.txt +
+- [username] [password] [jmbg]
+
+*Podaci o dostavljacima na terenu dostavljaci.txt +
+- [ime_dostavljaca] [koordinate]
+
+*Elektronski recepti elektronski_recepti.txt +
+- [JMBG]
+- [ljekovi] = [lijek1], [lijek2]...
+
