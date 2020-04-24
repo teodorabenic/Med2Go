@@ -1,0 +1,20 @@
+0779050437496
+'Proizvod_7' 'Proizvod_8' 'Proizvod_1' 'Proizvod_2' 
+3780669537306
+'Proizvod_2' 'Proizvod_3' 'Proizvod_9' 'Proizvod_6' 'Proizvod_7' 'Proizvod_3' 
+7534448780985
+'Proizvod_8' 'Proizvod_3' 
+0079442103906
+'Proizvod_7' 'Proizvod_9' 'Proizvod_10' 'Proizvod_9' 
+3506995345125
+'Proizvod_4' 'Proizvod_1' 
+3926768666233
+'Proizvod_5' 
+5933899588811
+'Proizvod_1' 'Proizvod_4' 
+1875399874808
+'Proizvod_9' 'Proizvod_4' 'Proizvod_4' 'Proizvod_1' 'Proizvod_5' 
+9166597455454
+'Proizvod_3' 'Proizvod_5' 'Proizvod_4' 'Proizvod_4' 'Proizvod_7' 'Proizvod_2' 
+2779759268520
+'Proizvod_1' 'Proizvod_9' 
