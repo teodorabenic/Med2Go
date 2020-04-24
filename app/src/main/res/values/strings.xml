@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Pokusaj</string>
+    <string name="trazite_lijek">Trazite lijek?</string>
+    <string name="naziv_lijeka">Naziv lijeka...</string>
 </resources>
