@@ -5,4 +5,9 @@
     <string name="kontaktirajte_nas">Kontaktirajte nas</string>
     <string name="neko_ime">Neko Ime</string>
     <string name="izmjena_naloga">Izmjena naloga</string>
+    <string name="nekoime_email_com">nekoime@email.com</string>
+    <string name="recepti">Recepti</string>
+    <string name="poruceno">Poruceno</string>
+    <string name="potrazite_lijek">Potrazite lijek</string>
+    <string name="o_nama">O nama</string>
 </resources>

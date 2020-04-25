@@ -31,7 +31,8 @@
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/neko_ime" />
+        android:text="@string/neko_ime"
+        android:background="color/transparent"/>
 
     <EditText
         android:id="@+id/editText9"
@@ -39,22 +40,23 @@
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="229dp"
+        android:autofillHints=""
+        android:background="color/transparent"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="nekoime@email.com" />
+        android:text="@string/nekoime_email_com" />
 
     <EditText
         android:id="@+id/editText10"
-        android:layout_width="375dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginTop="272dp"
         android:layout_marginEnd="0dp"
         android:autofillHints=""
@@ -66,119 +68,59 @@
         android:id="@+id/editText11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="239dp"
+        android:layout_marginBottom="238dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="         Recepti" />
+        android:text="@string/recepti"
+        tools:text="Recepti"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editText12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="197dp"
+        android:layout_marginBottom="191dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="         Poruceno" />
+        android:text="@string/poruceno"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editText13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="143dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="        Potrazite lijek" />
+        android:text="@string/potrazite_lijek"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editText14"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="105dp"
+        android:layout_marginBottom="96dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="        O nama" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="9dp"
-        android:layout_marginLeft="9dp"
-        android:layout_marginBottom="254dp"
-        app:srcCompat="@drawable/recept" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="209dp"
-        app:srcCompat="@drawable/order" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginBottom="160dp"
-        app:srcCompat="@drawable/search" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginBottom="115dp"
-        app:srcCompat="@drawable/onama" />
+        android:text="@string/o_nama"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editText8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="49dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="         Imate pitanja? Kontaktirajte nas" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginBottom="70dp"
-        app:srcCompat="@drawable/phone" />
+        android:text="@string/kontaktirajte_nas"
+        android:autofillHints="" />
 
 </RelativeLayout>
