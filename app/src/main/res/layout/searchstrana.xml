@@ -7,18 +7,17 @@
     android:background="@drawable/background2222"
     >
 
-
     <EditText
         android:id="@+id/editText7"
-        android:layout_width="393dp"
-        android:layout_height="43dp"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="127dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
         android:background="#ffffff"
         android:ems="10"
         android:fontFamily="sans-serif"
@@ -29,22 +28,6 @@
         android:textSize="18sp"
         android:autofillHints="" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="139sp"
-        android:layout_height="39sp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="13dp"
-        android:layout_marginLeft="13dp"
-        android:layout_marginTop="75dp"
-        android:contentDescription="@string/app_name"
-        android:fontFamily="sans-serif"
-        android:text="@string/trazite_lijek"
-        android:textColor="#000"
-        android:textSize="18sp" />
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="30dp"
@@ -52,9 +35,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="129dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
+        android:layout_marginTop="17.5dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/search" />
 
@@ -67,11 +50,11 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="373dp"
-        android:layout_marginRight="373dp"
+        android:layout_marginStart="361dp"
+        android:layout_marginLeft="361dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/home" />
 
