@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">Pokusaj</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiZmlrYXI1IiwiYSI6ImNrOWZlbTg0dzBhb3IzbXFtMW9pamM4dW4ifQ.dRWOHw0mpyDWh_t1bV3gxg</string>
+    <string name="app_name">Med2Go</string>
+    <string name="trazite_lijek">Trazite lijek?</string>
+    <string name="naziv_lijeka">Naziv lijeka ili apoteke...</string>
+    <string name="kontaktirajte_nas">Kontaktirajte nas</string>
+    <string name="neko_ime">Neko Ime</string>
+    <string name="izmjena_naloga">Izmjena naloga</string>
+    <string name="nekoime_email_com">nekoime@email.com</string>
+    <string name="recepti">Recepti</string>
+    <string name="poruceno">Poruceno</string>
+    <string name="potrazite_lijek">Potrazite lijek</string>
+    <string name="o_nama">O nama</string>
+    <string name="odabrani_proizvodi">Odabrani proizvodi</string>
+    <string name="naruci">Naruci</string>
 </resources>

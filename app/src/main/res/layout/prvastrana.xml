@@ -4,29 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background222"
+    android:background="@drawable/background2222"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="198dp"
         android:layout_height="190dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="108dp"
-        android:layout_marginLeft="108dp"
-        android:layout_marginTop="98dp"
+        android:layout_marginTop="115dp"
         app:srcCompat="@drawable/logo1" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/dugme1"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="318dp"
-        app:cardBackgroundColor="@color/cardview_dark_background"
+        android:layout_marginBottom="280dp"
+        app:cardBackgroundColor="#88D498"
         app:cardCornerRadius="25dp"
 
         app:cardElevation="10dp">
@@ -47,12 +44,13 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/registruj_se"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="227dp"
-        app:cardBackgroundColor="@color/cardview_dark_background"
+        android:layout_marginBottom="200dp"
+        app:cardBackgroundColor="#88D498"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp">
 
