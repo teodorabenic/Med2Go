@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background2222">
@@ -33,7 +34,8 @@
         android:layout_marginTop="138dp"
         android:ems="10"
         android:hint="Ime"
-        android:inputType="TODO" />
+        android:inputType="text"
+        android:background="#ffffff"/>
 
     <EditText
         android:id="@+id/editText4"
@@ -47,7 +49,8 @@
         android:layout_marginTop="208dp"
         android:ems="10"
         android:hint="E-mail"
-        android:textColor="#101010"/>
+        android:textColor="#101010"
+        android:background="#ffffff"/>
 
     <EditText
         android:id="@+id/editText5"
@@ -60,6 +63,7 @@
         android:layout_marginLeft="23dp"
         android:layout_marginTop="280dp"
         android:ems="10"
+        android:background="#ffffff"
         />
 
     <Button
@@ -73,6 +77,20 @@
         android:layout_marginStart="161dp"
         android:layout_marginLeft="161dp"
         android:layout_marginBottom="70dp"
-        android:text="Posalji" />
+        android:text="Posalji"
+        android:background="#009688"
+        />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="88dp"
+        app:srcCompat="@drawable/logo1" />
 
 </RelativeLayout>
