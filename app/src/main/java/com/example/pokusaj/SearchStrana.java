@@ -2,12 +2,14 @@ package com.example.pokusaj;
 
 import android.content.Intent;
 import android.graphics.BitmapFactory;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.mapbox.geojson.Feature;
@@ -22,7 +24,16 @@ import com.mapbox.mapboxsdk.style.layers.PropertyFactory;
 import com.mapbox.mapboxsdk.style.layers.SymbolLayer;
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource;
 
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconAllowOverlap;
@@ -39,7 +50,39 @@ public class SearchStrana extends AppCompatActivity implements
     private static final String ICON_ID = "ICON_ID";
     private static final String LAYER_ID = "LAYER_ID";
     private MapView mapView;
-    private List<Feature> symbolLayerIconFeatureList = new ArrayList<>();
+    private static List<Feature> symbolLayerIconFeatureList = new ArrayList<>();
+
+    public static int ordinalIndexOf(String str, String substr, int n) {
+        int pos = str.indexOf(substr);
+        while (--n > 0 && pos != -1)
+            pos = str.indexOf(substr, pos + 1);
+        return pos;
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public static List<String> readFileInList(String fileName) {
+        List<String> lines = Collections.emptyList();
+        try { lines = Files.readAllLines(Paths.get(fileName), StandardCharsets.UTF_8); }
+        catch (IOException e) { e.printStackTrace(); }
+        return lines;
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public boolean pretragaPoApoteci(String key){
+        boolean ans = false;
+        System.out.println();
+        List<String> lista = readFileInList("./BazaPodataka/spiskovi_apoteka.txt");
+        for(String line : lista){
+            if(line.contains(key)){
+                ans = true;
+                double coordLng = Double.parseDouble(line.substring(ordinalIndexOf(line, "'", 7), ordinalIndexOf(line, "'", 8)));
+                double coordLat = Double.parseDouble(line.substring(ordinalIndexOf(line, "'", 9), ordinalIndexOf(line, "'", 10)));
+                symbolLayerIconFeatureList.add(Feature.fromGeometry(
+                        Point.fromLngLat(coordLng, coordLat)));
+            }
+        }
+        return ans;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,23 +99,39 @@ public class SearchStrana extends AppCompatActivity implements
                 startActivity(intent);
             }
         });
-        ImageView search_clue = findViewById(R.id.imageView2);
-        /*
-        search_clue.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                final EditText search = findViewById(R.id.editText7);
-                String pretraga = search.getText().toString();
-
-            }
-        });
-         */
     }
 
     @Override
     public void onMapReady(@NonNull final MapboxMap mapboxMap) {
 
-        symbolLayerIconFeatureList.add(Feature.fromGeometry(
-                Point.fromLngLat(-57.225365, -33.213144)));
+        ImageView search_clue = findViewById(R.id.imageView2);
+        search_clue.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
+            public void onClick(View v) {
+                symbolLayerIconFeatureList.clear();
+                final EditText search = findViewById(R.id.editText7);
+                String pretraga = search.getText().toString();
+                boolean apoteka = pretragaPoApoteci(pretraga);
+                System.out.println(symbolLayerIconFeatureList.size());
+                mapboxMap.setStyle(new Style.Builder().fromUri("mapbox://styles/mapbox/cjf4m44iw0uza2spb3q0a7s41")
+                        .withImage(ICON_ID, BitmapFactory.decodeResource(
+                                SearchStrana.this.getResources(), R.drawable.marker))
+                        .withSource(new GeoJsonSource(SOURCE_ID,
+                                FeatureCollection.fromFeatures(symbolLayerIconFeatureList)))
+                        .withLayer(new SymbolLayer(LAYER_ID, SOURCE_ID)
+                                .withProperties(PropertyFactory.iconImage(ICON_ID),
+                                        iconAllowOverlap(true),
+                                        iconOffset(new Float[] {0f, -9f}))
+                        ), new Style.OnStyleLoaded() {
+                    @Override
+                    public void onStyleLoaded(@NonNull Style style) {
+
+
+                    }
+                });
+
+            }
+        });
         symbolLayerIconFeatureList.add(Feature.fromGeometry(
                 Point.fromLngLat(-54.14164, -33.981818)));
         symbolLayerIconFeatureList.add(Feature.fromGeometry(
