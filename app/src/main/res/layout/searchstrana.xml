@@ -5,7 +5,6 @@
     xmlns:mapbox="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background2222"
     tools:context=".SearchStrana"
     >
 
@@ -19,72 +18,36 @@
         mapbox:mapbox_cameraTargetLat="42.439074"
         mapbox:mapbox_cameraTargetLng="19.256907"
         android:layout_marginTop="50dp"
-        mapbox:mapbox_cameraZoom="7">
-    </com.mapbox.mapboxsdk.maps.MapView>
-
+        mapbox:mapbox_cameraZoom="7"/>
 
     <EditText
         android:id="@+id/editText7"
-        android:layout_width="300dp"
-        android:layout_height="45dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="5dp"
+        android:layout_marginEnd="2dp"
+        android:autofillHints=""
         android:background="#ffffff"
         android:ems="10"
         android:fontFamily="sans-serif"
+
         android:hint="@string/naziv_lijeka"
         android:inputType="textPersonName"
         android:shadowRadius="10"
-
-        android:textSize="18sp"
-        android:autofillHints="" />
+        android:textSize="18sp" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="30dp"
-        android:layout_height="45dp"
+        android:layout_width="28dp"
+        android:layout_height="37dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="8.5dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginLeft="310dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="36dp"
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/search" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="350dp"
-        android:layout_marginLeft="350dp"
-        android:layout_marginTop="5dp"
-        android:contentDescription="@string/app_name"
-        app:srcCompat="@drawable/home" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="362dp"
-        android:layout_marginLeft="362dp"
-        android:layout_marginTop="678dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginRight="9dp"
-        android:contentDescription="@string/app_name"
-        app:srcCompat="@drawable/basket" />
 
 </RelativeLayout>
