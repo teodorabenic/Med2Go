@@ -1,10 +1,12 @@
 package com.example.pokusaj;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,13 +14,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.prvastrana);
-        Button dug_login = findViewById(R.id.prijavi_se);
-        dug_login.setOnClickListener(new View.OnClickListener() {
+        CardView dugme1 = findViewById(R.id.dugme1);
+        dugme1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 setContentView(R.layout.loginstrana);
             }
         });
-        Button dug_nastavi = findViewById(R.id.dugmenastavi);
+        TextView dug_nastavi = findViewById(R.id.textView4);
         dug_nastavi.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 setContentView(R.layout.searchstrana);
