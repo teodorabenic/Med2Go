@@ -67,58 +67,68 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
+
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="238dp"
+
+        android:layout_marginBottom="295dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/recepti"
-        tools:text="Recepti"
-        android:autofillHints="" />
+        tools:text="Recepti" />
 
     <EditText
         android:id="@+id/editText12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
+
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="191dp"
+
+        android:layout_marginBottom="249dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/poruceno"
-        android:autofillHints="" />
+        android:text="@string/poruceno" />
 
     <EditText
         android:id="@+id/editText13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="143dp"
+
+        android:layout_marginBottom="204dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/potrazite_lijek"
-        android:autofillHints="" />
+        android:text="@string/potrazite_lijek" />
 
     <EditText
         android:id="@+id/editText14"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="96dp"
+
+        android:layout_marginBottom="160dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/o_nama"
-        android:autofillHints="" />
+        android:text="@string/o_nama" />
 
     <EditText
         android:id="@+id/editText8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
+
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="49dp"
+
+        android:layout_marginBottom="112dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/kontaktirajte_nas"
-        android:autofillHints="" />
+        android:text="@string/kontaktirajte_nas" />
 
 </RelativeLayout>
