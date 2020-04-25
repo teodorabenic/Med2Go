@@ -44,6 +44,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/registruj_se"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
