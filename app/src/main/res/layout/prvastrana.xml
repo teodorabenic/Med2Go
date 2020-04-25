@@ -20,18 +20,8 @@
         android:layout_marginTop="98dp"
         app:srcCompat="@drawable/logo1" />
 
-    <Button
-        android:id="@+id/prijavi_se"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:background="#80FF0000"
-        android:textColor="#80FF0000"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="318dp">
-    </Button>
-
     <androidx.cardview.widget.CardView
+        android:id="@+id/dugme1"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
@@ -80,17 +70,6 @@
                 android:textSize="24sp" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
-
-    <Button
-        android:id="@+id/dugmenastavi"
-        android:background="#80FF0000"
-        android:textColor="#80FF0000"
-        android:layout_width="110sp"
-        android:layout_height="35sp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="76dp">
-    </Button>
 
     <TextView
         android:id="@+id/textView4"
