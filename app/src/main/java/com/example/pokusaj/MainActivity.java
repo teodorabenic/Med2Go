@@ -28,10 +28,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        /*
         CardView registruj_se = findViewById(R.id.registruj_se);
         registruj_se.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                setContentView(R.layout.napravitinaog);
+                setContentView(R.layout.napravitinalog);
             }
         });
         Button login = findViewById(R.id.button3);
@@ -76,5 +77,6 @@ public class MainActivity extends AppCompatActivity {
                 setContentView(R.layout.kontaktirajtenas);
             }
         });
+         */
     }
 }
