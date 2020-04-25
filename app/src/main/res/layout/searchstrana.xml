@@ -58,24 +58,17 @@
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/search" />
 
-    <ImageView android:layout_width="match_parent" />
-<<<<<<< android:HEAD
-=======
-        android:id="@+id/imageView3"
-        android:layout_width="1dp"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/home" />
-
     <ImageView
->>>>>>> 51d320cced5cda08bb9ceb90531f92487c2e78cb
         android:id="@+id/imageView4"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="373dp"
         android:layout_marginRight="373dp"
@@ -90,10 +83,12 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_marginStart="362dp"
         android:layout_marginLeft="362dp"
         android:layout_marginTop="678dp"
         android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/basket" />
 
