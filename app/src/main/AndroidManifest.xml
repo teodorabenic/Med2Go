@@ -21,6 +21,9 @@
         <activity
             android:name=".SearchStrana"
             android:label="@string/app_name" />
+        <activity
+            android:name=".Registracija"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

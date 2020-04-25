@@ -28,13 +28,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        /*
         CardView registruj_se = findViewById(R.id.registruj_se);
         registruj_se.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                setContentView(R.layout.napravitinalog);
+                Intent intent = new Intent(MainActivity.this, Registracija.class);
+                startActivity(intent);
             }
         });
+        /*
         Button login = findViewById(R.id.button3);
         login.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
