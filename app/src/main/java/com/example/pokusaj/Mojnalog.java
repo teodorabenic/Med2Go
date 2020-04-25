@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Mojnalog extends AppCompatActivity {
@@ -13,38 +14,38 @@ public class Mojnalog extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mojnalog);
-        TextView izmjena_naloga = findViewById(R.id.editText10);
+        Button izmjena_naloga = findViewById(R.id.button11);
         izmjena_naloga.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(Mojnalog.this, Izmjenanaloga.class);
                 startActivity(intent);            }
         });
-        TextView recepti = findViewById(R.id.editText11);
+        Button recepti = findViewById(R.id.button12);
         recepti.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(Mojnalog.this, Listarecepata.class);
                 startActivity(intent);            }
         });
-        TextView naruceno = findViewById(R.id.editText12);
+        Button naruceno = findViewById(R.id.button13);
         naruceno.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(Mojnalog.this, Naruceno.class);
                 startActivity(intent);            }
         });
-        TextView search_lijek = findViewById(R.id.editText13);
+        Button search_lijek = findViewById(R.id.button14);
         search_lijek.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(Mojnalog.this, SearchStrana.class);
                 startActivity(intent);             }
         });
-        TextView o_nama = findViewById(R.id.editText14);
+        Button o_nama = findViewById(R.id.button15);
         o_nama.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(Mojnalog.this, Onama.class);
                 startActivity(intent);
             }
         });
-        TextView kontakt = findViewById(R.id.editText8);
+        Button kontakt = findViewById(R.id.button16);
         kontakt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(Mojnalog.this, Kontakt.class);
