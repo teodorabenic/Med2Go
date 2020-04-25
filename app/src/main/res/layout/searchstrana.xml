@@ -58,8 +58,8 @@
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/search" />
 
-    <ImageView
-<<<<<<< HEAD
+    <ImageView android:layout_width="match_parent" />
+<<<<<<< android:HEAD
 =======
         android:id="@+id/imageView3"
         android:layout_width="1dp"

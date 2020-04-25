@@ -3,4 +3,6 @@
     <string name="trazite_lijek">Trazite lijek?</string>
     <string name="naziv_lijeka">Naziv lijeka...</string>
     <string name="kontaktirajte_nas">Kontaktirajte nas</string>
+    <string name="neko_ime">Neko Ime</string>
+    <string name="izmjena_naloga">Izmjena naloga</string>
 </resources>
