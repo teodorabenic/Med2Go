@@ -52,7 +52,7 @@ public class SearchStrana extends AppCompatActivity implements
         ImageView kucica = findViewById(R.id.imageView4);
         kucica.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(SearchStrana.this, MainActivity.class);
+                Intent intent = new Intent(SearchStrana.this, Mojnalog.class);
                 startActivity(intent);
             }
         });
