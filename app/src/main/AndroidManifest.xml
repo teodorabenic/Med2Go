@@ -40,9 +40,6 @@
             android:name=".Naruceno"
             android:label="@string/app_name" />
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" />
-        <activity
             android:name=".Onama"
             android:label="@string/app_name" />
         <activity

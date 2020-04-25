@@ -12,7 +12,7 @@ public class Registracija extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.napravitinaog);
+        setContentView(R.layout.napravitinalog);
         Button sign_up = findViewById(R.id.buttonReg);
         sign_up.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
