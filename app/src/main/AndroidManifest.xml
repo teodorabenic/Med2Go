@@ -24,6 +24,30 @@
         <activity
             android:name=".Registracija"
             android:label="@string/app_name" />
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Mojnalog"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Listarecepata"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Izmjenanaloga"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Naruceno"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Onama"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Kontakt"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>
