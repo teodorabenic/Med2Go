@@ -19,7 +19,8 @@
         mapbox:mapbox_cameraTargetLat="42.439074"
         mapbox:mapbox_cameraTargetLng="19.256907"
         android:layout_marginTop="50dp"
-        mapbox:mapbox_cameraZoom="7"/>
+        mapbox:mapbox_cameraZoom="7">
+    </com.mapbox.mapboxsdk.maps.MapView>
 
 
     <EditText
