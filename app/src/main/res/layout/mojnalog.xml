@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background2222"
-    >
+    android:background="@drawable/background2222">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -31,7 +30,7 @@
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/neko_ime"/>
+        android:text="@string/neko_ime" />
 
     <EditText
         android:id="@+id/editText9"
@@ -45,90 +44,69 @@
         android:inputType="textPersonName"
         android:text="@string/nekoime_email_com" />
 
-    <EditText
-        android:id="@+id/editText10"
+    <Button
+        android:id="@+id/button11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="381dp"
+        android:background="#88D498"
+        android:text="Izmjena naloga" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="285dp"
+        android:background="#88D498"
+        android:text="Recepti" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="226dp"
+        android:background="#88D498"
+        android:text="Poručeno" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="272dp"
-        android:layout_marginEnd="0dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/izmjena_naloga" />
+        android:layout_marginBottom="168dp"
+        android:background="#88D498"
+        android:text="Potražite lijek" />
 
-    <EditText
-        android:id="@+id/editText11"
+    <Button
+        android:id="@+id/button15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="104dp"
+        android:background="#88D498"
+        android:text="O nama" />
 
-        android:layout_marginBottom="295dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/recepti"
-        tools:text="Recepti" />
-
-    <EditText
-        android:id="@+id/editText12"
+    <Button
+        android:id="@+id/button16"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-
-        android:layout_marginBottom="249dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/poruceno" />
-
-    <EditText
-        android:id="@+id/editText13"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:layout_alignParentBottom="true"
-
-        android:layout_marginBottom="204dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/potrazite_lijek" />
-
-    <EditText
-        android:id="@+id/editText14"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:layout_alignParentBottom="true"
-
-        android:layout_marginBottom="160dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/o_nama" />
-
-    <EditText
-        android:id="@+id/editText8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-
-        android:layout_alignParentBottom="true"
-
-        android:layout_marginBottom="112dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/kontaktirajte_nas" />
+        android:layout_marginStart="-3dp"
+        android:layout_marginBottom="42dp"
+        android:background="#88D498"
+        android:text="Kontaktirajte nas" />
 
 </RelativeLayout>

@@ -63,7 +63,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="163dp"
         android:layout_marginLeft="163dp"
-        android:layout_marginTop="532dp"
+        android:layout_marginTop="523dp"
         android:background="#88D498"
         android:text="Log in" />
 
