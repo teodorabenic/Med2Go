@@ -1,4 +1,5 @@
 <resources>
+    <string name="mapbox_access_token">pk.eyJ1IjoiZmlrYXI1IiwiYSI6ImNrOWZlbTg0dzBhb3IzbXFtMW9pamM4dW4ifQ.dRWOHw0mpyDWh_t1bV3gxg</string>
     <string name="app_name">Med2Go</string>
     <string name="trazite_lijek">Trazite lijek?</string>
     <string name="naziv_lijeka">Naziv lijeka ili apoteke...</string>
