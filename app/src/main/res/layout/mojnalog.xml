@@ -42,7 +42,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="279dp"
-        android:background="color/transparent"
+        android:background="#0088D498"
         android:text="Izmjena naloga" />
 
     <Button
@@ -53,7 +53,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="275dp"
-        android:background="color/transparent"
+        android:background="#0088D498"
         android:text="Recepti" />
 
     <Button
@@ -64,7 +64,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="1dp"
         android:layout_marginBottom="216dp"
-        android:background="color/transparent"
+        android:background="#0088D498"
         android:text="Poručeno" />
 
     <Button
@@ -75,7 +75,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="157dp"
-        android:background="color/transparent"
+        android:background="#0088D498"
         android:text="Potražite lijek" />
 
     <Button
@@ -86,7 +86,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="-2dp"
         android:layout_marginBottom="98dp"
-        android:background="color/transparent"
+        android:background="#0088D498"
         android:text="O nama" />
 
     <Button
@@ -97,7 +97,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="-3dp"
         android:layout_marginBottom="42dp"
-        android:background="color/transparent"
+        android:background="#0088D498"
         android:text="Kontaktirajte nas" />
 
 </RelativeLayout>
