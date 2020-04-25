@@ -1,6 +1,7 @@
 package com.example.pokusaj;
 
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
@@ -46,6 +47,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconAllowOverlap;
@@ -73,15 +75,6 @@ public class SearchStrana extends AppCompatActivity implements
         return pos;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    public static List<String> readFileInList(String fileName) {
-        List<String> lines = Collections.emptyList();
-        try { lines = Files.readAllLines(Paths.get(fileName), StandardCharsets.UTF_8); }
-        catch (IOException e) { e.printStackTrace(); }
-        return lines;
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.O)
     public boolean pretragaPoApoteci(String key) throws IOException {
         boolean ans = false;
         List<String> result = new ArrayList<>();
@@ -110,6 +103,66 @@ public class SearchStrana extends AppCompatActivity implements
             }
         }
         return ans;
+    }
+
+    public void pretragaPoProizvodu(String key){
+        final AssetManager assets = getAssets();
+        try{
+            final String[] names = assets.list( "BazaPodataka/Proizvodi" );
+            LinkedList<String> apoteke_sa_proizvodom = new LinkedList<String>();
+            for(String apoteka : names){
+                String path = "BazaPodataka/Proizvodi/" + apoteka;
+                List<String> result = new ArrayList<>();
+                BufferedReader br = null;
+                try {
+                    br = new BufferedReader(new InputStreamReader(getAssets().open(path)));
+                    String line;
+                    while ((line = br.readLine()) != null) {
+                        result.add(line);
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } finally {
+                    if (br != null) {
+                        br.close();
+                    }
+                }
+                for(String line : result){
+                    if(line.substring(ordinalIndexOf(line, "'", 1) + 1, ordinalIndexOf(line, "'", 2)).equals(key)){
+                        apoteke_sa_proizvodom.add(apoteka);
+                        break;
+                    }
+                }
+            }
+            List<String> result = new ArrayList<>();
+            BufferedReader br = null;
+            try {
+                br = new BufferedReader(new InputStreamReader(getAssets().open("BazaPodataka/spiskovi_apoteka.txt")));
+                String line;
+                while ((line = br.readLine()) != null) {
+                    result.add(line);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                if (br != null) {
+                    br.close();
+                }
+            }
+            for(String line : result){
+                for(String apoteka_tr : apoteke_sa_proizvodom) {
+                    if (line.substring(ordinalIndexOf(line, "'", 1) + 1, ordinalIndexOf(line, "'", 2)).equals(apoteka_tr.substring(0, apoteka_tr.length()-4))) {
+                        double coordLng = Double.parseDouble(line.substring(ordinalIndexOf(line, "'", 7) + 1, ordinalIndexOf(line, "'", 8)));
+                        double coordLat = Double.parseDouble(line.substring(ordinalIndexOf(line, "'", 9) + 1, ordinalIndexOf(line, "'", 10)));
+                        symbolLayerIconFeatureList.add(Feature.fromGeometry(
+                                Point.fromLngLat(coordLat, coordLng)));
+                    }
+                }
+            }
+        } catch (IOException e){
+            System.out.println("Ne postoji direktorijum.");
+            return;
+        }
     }
 
     @Override
@@ -141,10 +194,10 @@ public class SearchStrana extends AppCompatActivity implements
                 String pretraga = search.getText().toString();
                 try{
                     boolean apoteka = pretragaPoApoteci(pretraga);
+                    if(symbolLayerIconFeatureList.size()==0) pretragaPoProizvodu(pretraga);
                 }catch (IOException e){
                     System.out.println("Greska");
                 }
-                System.out.println(symbolLayerIconFeatureList.size());
                 mapboxMap.setStyle(new Style.Builder().fromUri("mapbox://styles/mapbox/cjf4m44iw0uza2spb3q0a7s41")
                         .withImage(ICON_ID, BitmapFactory.decodeResource(
                                 SearchStrana.this.getResources(), R.drawable.marker))
