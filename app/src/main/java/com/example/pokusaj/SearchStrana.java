@@ -24,8 +24,11 @@ import com.mapbox.mapboxsdk.style.layers.PropertyFactory;
 import com.mapbox.mapboxsdk.style.layers.SymbolLayer;
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.FileSystems;
@@ -68,17 +71,35 @@ public class SearchStrana extends AppCompatActivity implements
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
-    public boolean pretragaPoApoteci(String key){
+    public boolean pretragaPoApoteci(String key) throws IOException {
         boolean ans = false;
-        System.out.println();
-        List<String> lista = readFileInList("./BazaPodataka/spiskovi_apoteka.txt");
-        for(String line : lista){
+        List<String> result = new ArrayList<>();
+        BufferedReader br = null;
+
+        try {
+
+            br = new BufferedReader(new InputStreamReader(getAssets().open("BazaPodataka/spiskovi_apoteka.txt")));
+
+            String line;
+            while ((line = br.readLine()) != null) {
+                result.add(line);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                br.close();
+            }
+        }
+        for(String line : result){
             if(line.contains(key)){
                 ans = true;
-                double coordLng = Double.parseDouble(line.substring(ordinalIndexOf(line, "'", 7), ordinalIndexOf(line, "'", 8)));
-                double coordLat = Double.parseDouble(line.substring(ordinalIndexOf(line, "'", 9), ordinalIndexOf(line, "'", 10)));
+                double coordLng = Double.parseDouble(line.substring(ordinalIndexOf(line, "'", 7)+1, ordinalIndexOf(line, "'", 8)));
+                double coordLat = Double.parseDouble(line.substring(ordinalIndexOf(line, "'", 9)+1, ordinalIndexOf(line, "'", 10)));
+                System.out.println(coordLat + " " + coordLng);
                 symbolLayerIconFeatureList.add(Feature.fromGeometry(
-                        Point.fromLngLat(coordLng, coordLat)));
+                        Point.fromLngLat(coordLat, coordLng)));
             }
         }
         return ans;
@@ -111,7 +132,11 @@ public class SearchStrana extends AppCompatActivity implements
                 symbolLayerIconFeatureList.clear();
                 final EditText search = findViewById(R.id.editText7);
                 String pretraga = search.getText().toString();
-                boolean apoteka = pretragaPoApoteci(pretraga);
+                try{
+                    boolean apoteka = pretragaPoApoteci(pretraga);
+                }catch (IOException e){
+                    System.out.println("Greska");
+                }
                 System.out.println(symbolLayerIconFeatureList.size());
                 mapboxMap.setStyle(new Style.Builder().fromUri("mapbox://styles/mapbox/cjf4m44iw0uza2spb3q0a7s41")
                         .withImage(ICON_ID, BitmapFactory.decodeResource(
@@ -125,7 +150,6 @@ public class SearchStrana extends AppCompatActivity implements
                         ), new Style.OnStyleLoaded() {
                     @Override
                     public void onStyleLoaded(@NonNull Style style) {
-
 
                     }
                 });
