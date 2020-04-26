@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.pokusaj">
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -11,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,30 +23,48 @@
         </activity>
         <activity
             android:name=".SearchStrana"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
             android:label="@string/app_name" />
         <activity
             android:name=".Registracija"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
             android:label="@string/app_name" />
         <activity
             android:name=".Login"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
             android:label="@string/app_name" />
         <activity
             android:name=".Mojnalog"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
             android:label="@string/app_name" />
         <activity
             android:name=".Listarecepata"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
             android:label="@string/app_name" />
         <activity
             android:name=".Izmjenanaloga"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
             android:label="@string/app_name" />
         <activity
             android:name=".Naruceno"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
             android:label="@string/app_name" />
         <activity
             android:name=".Onama"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
             android:label="@string/app_name" />
         <activity
             android:name=".Kontakt"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
             android:label="@string/app_name" />
     </application>
 
