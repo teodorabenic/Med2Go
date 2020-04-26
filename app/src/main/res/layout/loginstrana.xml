@@ -27,7 +27,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="243dp"
         android:ems="10"
-        android:hint="E-mail"
+        android:hint="Korisničko ime"
         android:inputType="textPersonName"
 
         android:textSize="16dp" />

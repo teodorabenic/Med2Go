@@ -51,7 +51,7 @@
         android:layout_marginStart="21dp"
         android:layout_marginLeft="21dp"
         android:layout_marginTop="160dp"
-        android:text="Stara lozinka"
+        android:text="Stari laozinka"
         android:textColor="#020202"
         android:textSize="18sp" />
 
