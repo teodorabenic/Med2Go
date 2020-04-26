@@ -12,8 +12,12 @@
         android:layout_width="198dp"
         android:layout_height="190dp"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="115dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
         app:srcCompat="@drawable/logo" />
 
     <androidx.cardview.widget.CardView

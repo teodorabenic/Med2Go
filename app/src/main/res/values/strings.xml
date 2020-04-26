@@ -13,4 +13,6 @@
     <string name="o_nama">O nama</string>
     <string name="odabrani_proizvodi">Odabrani proizvodi</string>
     <string name="naruci">Naruci</string>
+    <string name="user_location_permission_not_granted">Upotreba lokacije nije dozvoljena.</string>
+    <string name="user_location_permission_explanation">Molimo Vas da dozvolite upotrebu Vaše lokacije.</string>
 </resources>
