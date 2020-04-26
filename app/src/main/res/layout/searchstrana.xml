@@ -18,12 +18,14 @@
         mapbox:mapbox_cameraTargetLat="42.439074"
         mapbox:mapbox_cameraTargetLng="19.256907"
         android:layout_marginTop="50dp"
-        mapbox:mapbox_cameraZoom="7"/>
+        mapbox:mapbox_cameraZoom="7">
+
+    </com.mapbox.mapboxsdk.maps.MapView>
 
     <EditText
         android:id="@+id/editText7"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_width="363dp"
+        android:layout_height="38dp"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="2dp"
@@ -43,11 +45,17 @@
         android:layout_height="37dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="3dp"
         android:layout_marginRight="36dp"
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/search" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        mapbox:srcCompat="@drawable/acc2" />
 
 
 </RelativeLayout>
