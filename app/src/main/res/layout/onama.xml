@@ -164,7 +164,7 @@
         android:layout_marginLeft="27dp"
         android:layout_marginBottom="165dp"
         android:fontFamily="sans-serif"
-        android:text="Gdje nas mozete naci?"
+        android:text="Gdje nas mozete naći?"
         android:textColor="#111"
         android:textSize="20sp" />
 
@@ -180,7 +180,7 @@
         android:layout_marginRight="65dp"
         android:layout_marginBottom="116dp"
         android:fontFamily="sans-serif"
-        android:text="Najlakse nas mozete naci na StackOverflow-u!"
+        android:text="Najlakše nas možete naći na StackOverflow-u!"
         android:textColor="#111" />
 
 
