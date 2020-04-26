@@ -30,7 +30,7 @@
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/neko_ime"
+        android:text="markomarković"
         tools:text="Marko Marković" />
 
     <Button
