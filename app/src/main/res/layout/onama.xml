@@ -43,7 +43,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="81dp"
         android:fontFamily="sans-serif"
-        android:text="Sta je MED2DO?"
+        android:text="Šta je MED2DO?"
         android:textColor="#111"
         android:textSize="20sp" />
 
@@ -59,7 +59,7 @@
         android:layout_marginTop="112dp"
         android:layout_marginEnd="5dp"
         android:fontFamily="sans-serif"
-        android:text="MED2GO je upravo oko sto korisnicima olaksava trgovinu proizvoda u apotekama!"
+        android:text="MED2GO je upravo ono što korisnicima olakšava trgovinu proizvoda u apotekama!"
         android:textColor="#111" />
 
     <TextView
@@ -71,9 +71,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="24dp"
-        android:fontFamily="sans-serif"
         android:layout_marginTop="181dp"
-        android:text="Sta to mi radimo?"
+        android:fontFamily="sans-serif"
+        android:text="Šta to mi radimo?"
         android:textColor="#111"
         android:textSize="20sp" />
 
@@ -102,10 +102,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="26dp"
-        android:fontFamily="sans-serif"
         android:layout_marginTop="234dp"
         android:layout_marginEnd="27dp"
-        android:text="1.Nasim korisnicima pruzamo laku pretragu proizvoda po apotekama i na taj nacin sati i sati trazenja pretvori se u samo par klikova"
+        android:fontFamily="sans-serif"
+        android:text="1.Našim korisnicima pružamo laku pretragu proizvoda po apotekama i na taj način sati i sati traženja pretvori se u samo par klikova"
         android:textColor="#111" />
 
     <TextView
@@ -118,9 +118,9 @@
         android:layout_centerInParent="true"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="27dp"
-        android:fontFamily="sans-serif"
         android:layout_marginTop="289dp"
-        android:text="2.Za one koji zele beskontaktnu kupovinu, online dostava je pravi izbor za njih, a to ce im ova aplikacija i omoguiti!"
+        android:fontFamily="sans-serif"
+        android:text="2.Za one koji žele beskontaktnu kupovinu, online dostava je pravi izbor za njih, a to će im ova aplikacija i omogućiti!"
         android:textColor="#111" />
 
     <TextView
@@ -150,7 +150,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="217dp"
         android:fontFamily="sans-serif"
-        android:text="Mi smo MED2GO, grupa studenata racunarskih nauka koji su koji su u danima pandemije htjeli pomoci svojim sugradjanima."
+        android:text="Mi smo MED2GO, grupa studenata računarskih nauka koji su koji su u danima pandemije htjeli pomoći svojim sugrađanima."
         android:textColor="#111" />
 
     <TextView
