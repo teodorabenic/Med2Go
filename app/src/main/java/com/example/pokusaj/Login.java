@@ -16,7 +16,7 @@ public class Login extends AppCompatActivity {
         Button login = findViewById(R.id.button3);
         login.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(Login.this, SearchStrana.class);
+                Intent intent = new Intent(Login.this, Mojnalog.class);
                 startActivity(intent);
             }
         });
