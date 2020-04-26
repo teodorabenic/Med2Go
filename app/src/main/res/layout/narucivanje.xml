@@ -24,6 +24,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="19dp"
-        android:text="@string/naruci"
-        android:background="#88D498"/>
+        android:background="#88D498"
+        android:text="@string/naruci" />
 </RelativeLayout>
