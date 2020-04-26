@@ -5,7 +5,7 @@
 'Proizvod_10' 10 6
 'Proizvod_6' 4 3
 'Proizvod_7' 8 7
-'Proizvod_2' 4 2
+'andol' 4 2
 'Proizvod_8' 1 8
 'Proizvod_8' 2 2
 'Proizvod_6' 5 1

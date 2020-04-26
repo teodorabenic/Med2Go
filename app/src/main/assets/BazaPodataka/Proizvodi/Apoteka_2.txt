@@ -5,11 +5,11 @@
 'Proizvod_10' 1 7
 'Proizvod_9' 2 5
 'Proizvod_1' 4 6
-'Proizvod_5' 2 2
+'insulin' 2 2
 'Proizvod_3' 7 4
 'Proizvod_1' 8 0
-'Proizvod_5' 10 3
+'insulin' 10 3
 'Proizvod_10' 1 8
-'Proizvod_5' 7 7
+'insulin' 7 7
 'Proizvod_3' 6 1
 'Proizvod_1' 6 5

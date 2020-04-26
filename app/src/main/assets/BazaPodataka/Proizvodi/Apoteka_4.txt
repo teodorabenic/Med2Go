@@ -1,7 +1,7 @@
 'Proizvod_1' 2 4
 'Proizvod_7' 2 7
 'Proizvod_7' 8 8
-'Proizvod_5' 7 0
+'insulin' 7 0
 'Proizvod_4' 9 7
 'Proizvod_8' 3 2
 'Proizvod_6' 7 6
@@ -9,4 +9,4 @@
 'Proizvod_3' 3 8
 'Proizvod_4' 1 8
 'Proizvod_4' 3 4
-'Proizvod_5' 2 9
+'insulin' 2 9
