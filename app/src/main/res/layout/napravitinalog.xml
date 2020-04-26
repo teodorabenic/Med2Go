@@ -15,7 +15,7 @@
         android:layout_centerInParent="true"
         android:layout_marginBottom="313dp"
         android:ems="10"
-        android:hint="E-mail"
+        android:hint="Username"
 
         android:inputType="textPersonName"
         android:textSize="16dp" />
@@ -43,20 +43,21 @@
         android:layout_marginLeft="163dp"
         android:layout_marginTop="532dp"
         android:background="#88D498"
-        android:text="SING UP" />
+        android:text="SIGN UP" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="181dp"
-        android:layout_height="170dp"
+        android:layout_width="198dp"
+        android:layout_height="190dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="98dp"
-        android:layout_marginEnd="119dp"
-        android:layout_marginRight="119dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
         app:srcCompat="@drawable/logo" />
+
 
     <EditText
         android:id="@+id/editText15"
